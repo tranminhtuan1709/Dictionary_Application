@@ -7,11 +7,11 @@ public class Word {
      */
     public Word() {
         wordTarget = "";
-        wordExplain = "";
+        wordExplain = null;
     }
 
     /**
-     * Constructor copy, deep copy value of other word to this word.
+     * Constructor copy, deep copy value of another word to this word.
      * @param word other word
      */
     public Word(Word word) {
@@ -31,7 +31,7 @@ public class Word {
 
     /**
      * Returns english word.
-     * @return a String type represent the english word
+     * @return a String type represents the english word
      */
     public String getWordTarget() {
         return wordTarget;
@@ -39,7 +39,7 @@ public class Word {
 
     /**
      * Returns vietnamese word.
-     * @return a String type represent the vietnamese word
+     * @return a String type represents the vietnamese word
      */
     public String getWordExplain() {
         return wordExplain;

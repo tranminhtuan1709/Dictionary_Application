@@ -29,7 +29,7 @@ public class TrieNode {
     }
 
     /**
-     * Constructor copy, deep copy other node to this node.
+     * Constructor copy, deep copy another node to this node.
      * @param node other node
      */
     public TrieNode(TrieNode node) {
@@ -46,7 +46,7 @@ public class TrieNode {
     }
 
     /**
-     * Sets the value of word in this node equal to other word.
+     * Sets the value of word in this node equal to another word.
      * @param word other word
      */
     public void setWord(Word word) {
