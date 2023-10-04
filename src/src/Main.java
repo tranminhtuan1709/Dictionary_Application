@@ -6,7 +6,7 @@ public class Main {
         t.add("Computer", "May tinh");
         t.add("Company", "Cong ty");
         try {
-            System.out.print(t.search("Com"));
+            System.out.print();
         } catch (Exception exception) {
             System.out.print(exception);
         }
