@@ -1,31 +1,12 @@
 public class TrieNode {
-    private Word word;
+    private String meaning = null;
     public TrieNode[] next = new TrieNode[25];
 
     /**
      * Default constructor.
      */
     public TrieNode() {
-        this.word = new Word();
-    }
 
-    /**
-     * Constructor.
-     * @param word word
-     */
-    public TrieNode(Word word) {
-        this.word = new Word(word);
-    }
-
-    /**
-     * Constructor.
-     * @param wordTarget english word
-     * @param wordExplain vietnamese word
-     */
-    public TrieNode(String wordTarget, String wordExplain) {
-        word = new Word();
-        this.word.setWordTarget(wordTarget);
-        this.word.setWordExplain(wordExplain);
     }
 
     /**
@@ -33,33 +14,15 @@ public class TrieNode {
      * @param node other node
      */
     public TrieNode(TrieNode node) {
-        this.word = new Word(node.word);
+        this.meaning = node.meaning;
         this.next = node.next;
     }
 
-    /**
-     * Returns value of word.
-     * @return a word of this node
-     */
-    public Word getWord() {
-        return this.word;
+    public String getMeaning() {
+        return meaning;
     }
 
-    /**
-     * Sets the value of word in this node equal to another word.
-     * @param word other word
-     */
-    public void setWord(Word word) {
-        this.word = new Word(word);
-    }
-
-    /**
-     * Sets the value of word in this node by english string and vietnamese string.
-     * @param wordTarget english word
-     * @param wordExplain vietnamese word
-     */
-    public void setWord(String wordTarget, String wordExplain) {
-        this.word.setWordTarget(wordTarget);
-        this.word.setWordExplain(wordExplain);
+    public void setMeaning(String meaning) {
+        this.meaning = meaning;
     }
 }
